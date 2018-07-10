@@ -7,9 +7,16 @@ public class PlayerShoot : MonoBehaviour {
     public AudioClip shotsounds;
     public AudioClip popsounds;
 
+    private PlayerController player;
+
+    private void Start()
+    {
+        player = FindObjectOfType<PlayerController>();
+    }
+
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !player.isDead)
         {
             Shoot();
         }

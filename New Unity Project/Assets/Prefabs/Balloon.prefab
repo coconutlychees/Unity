@@ -125,6 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color: {r: 1, g: 1, b: 1, a: 1}
   balloon: {fileID: 1461555724272170}
+  speed: 3
 --- !u!136 &136386424272652078
 CapsuleCollider:
   m_ObjectHideFlags: 1
